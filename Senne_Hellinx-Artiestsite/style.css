@@ -1,0 +1,105 @@
+
+        body {background-color: rgb(185, 70, 70);
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        img {
+       width: 45%;
+       
+        }
+        header {
+            background-color: rgb(74, 32, 32);
+            font-family: "hollywood";
+            font-size: larger;
+            text-align: center;
+            background-image:url(images/Systemoad.jpg);
+            
+            background-position: px;
+            background-size: cover;
+            padding:    15%;
+            
+        }
+        header a:hover{
+          color: rgb(152, 43, 43);
+        }
+        
+        
+       
+        nav li {
+            display: Inline;
+            margin: 0% auto;
+            padding: 0%;
+            
+        }
+
+        nav a {
+            display: inline-block;
+            background-color: rgb(59, 46, 46);
+            padding: 10px;
+            text-decoration-color: azure;
+            margin: 0% auto;
+            color: antiquewhite;
+            
+        }
+        
+        section {
+            padding: 3%;
+            
+        }
+
+    
+    
+        footer {
+            background-color: rgb(49, 15, 15);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+        }
+   
+    @font-face{
+        font-family: hollywood;
+        src: url("font/SF\ Hollywood\ Hills.ttf");
+    }
+   #home {
+    background-color: rgb(134, 17, 17);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(216, 216, 216);
+    
+    
+   }
+
+  #merch {
+    bottom: 0%;
+    background-color: rgb(123, 10, 10);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(235, 233, 233);
+    
+  }
+
+  #awards {
+    background-color: rgb(93, 25, 25);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(234, 234, 234);
+    
+    background-size: 100%;
+  }
+
+  #tour {
+    background-color: rgb(62, 7, 7);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(237, 237, 237);
+    background-image:url(images/636979dba7b7aa1b031f090e_SNW_1200x1500.png);
+    background-position: center;
+    padding-top: 1000px;
+    
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  
+   * {
+margin: 0px;
+padding: 0px;
+   }
+   
