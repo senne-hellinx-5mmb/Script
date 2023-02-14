@@ -17,11 +17,12 @@ header nav li {
 header i{
     font-size: 2Rem;
     margin-right: 0%;
-  
+
 }
 
 header{
-    background-color: rgb(32, 31, 31);
+    background-color: rgb(70, 58, 58);
+    
 }
 
 
@@ -29,4 +30,22 @@ header{
     margin: 0%;
     padding: 0;
     box-sizing: border-box;
+}
+
+ul{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: ;
+}
+
+.videoframe {
+    overflow: hidden;
+    margin-bottom: 3rem;
+    max-height: 50vh;
+}
+
+.videoframe {
+    width: 100%;
+}
+.img{
+    width: auto;
 }
