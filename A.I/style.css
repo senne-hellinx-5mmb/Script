@@ -24,7 +24,7 @@ header {
   margin-left: 20px;
 }
 .navigation a {
-  color: #856969;
+  color: #fad3d3;
   text-decoration: none;
   font-size: 18px;
 }
@@ -34,7 +34,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 50vh;
-  color: #523737;
+  color: #f9d3d3;
   text-align: center;
 }
 .hero h1 {
@@ -47,8 +47,8 @@ header {
 }
 .hero button {
   padding: 10px 20px;
-  background-color: #c7bfbf;
-  color: #333;
+  background-color: #796666;
+  color: #e4b4b4;
   border: none;
   font-size: 24px;
   cursor: pointer;
@@ -62,7 +62,10 @@ header {
 .social-icons a {
   margin: 0 10px;
   font-size: 24px;
-  color: #523737;
+  color: #3a2626;
   text-decoration: none;
 }
-  
+
+header{
+  background-image: url('img/Oil painting of a steampunk library.jpg');
+}
