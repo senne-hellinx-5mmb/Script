@@ -3,7 +3,7 @@
    --bgc-02:rgb(255, 55, 0);
 }
 
-@import url();
+@import url(href="https://use.typekit.net/txk1nur.css">);
 
 *{
     margin: 0%;
@@ -14,7 +14,7 @@
 body{
     background-color: var(--bgc-02);
     color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family
 }
 
 header{
