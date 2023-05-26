@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Grid with Placeholder Images</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style> 
+		/* Style the grid container */
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 10px;
+		}
+		
+		/* Style the images */
+		.grid-item img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+       <div class="grid-item">
+            <a href="https://via.placeholder.com/300x200.png?text=Image+1" data-lightbox="image-1" data-title="Image 1">  
+               <img src="https://via.placeholder.com/300x200.png?text=Image+1">
+            </a>
+        </div>
+		<div class="grid-item"><img src="https://via.placeholder.com/300x200.png?text=Image+2"></div>
+		<div class="grid-item"><img src="https://via.placeholder.com/300x200.png?text=Image+3"></div>
+		<div class="grid-item"><img src="https://via.placeholder.com/300x200.png?text=Image+4"></div>
+		<div class="grid-item"><img src="https://via.placeholder.com/300x200.png?text=Image+5"></div>
+		<div class="grid-item"><img src="https://via.placeholder.com/300x200.png?text=Image+6"></div>
+	</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
