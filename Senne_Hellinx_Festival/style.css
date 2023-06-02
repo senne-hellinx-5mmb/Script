@@ -1,6 +1,7 @@
 :root{
    --bgc-01:rgb(95, 19, 19);
    --bgc-02:rgb(255, 55, 0);
+   --bgc-03:rgb(95, 19, 19);
 }
 
 
@@ -14,7 +15,6 @@
 body{
     background-color: var(--bgc-02);
     color: black;
-    font-family
 }
 
 header{
@@ -50,6 +50,15 @@ header a{
 header :hover{
     color: rgb(255, 255, 255);
     
+}
+
+header input#burger {
+    display: none;
+}
+
+header label[for="burger"] i {
+    margin: 0;
+    font-size: 1.25rem;
 }
 
 .grid-container{
@@ -164,3 +173,12 @@ footer{
 .video{
     justify-content: center;
 }
+
+@media (width <=750px) {
+    
+       #lineup .grid-container{
+            grid-template-columns: 1fr;
+        }
+
+        
+    }
