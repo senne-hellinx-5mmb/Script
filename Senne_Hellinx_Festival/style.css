@@ -1,6 +1,6 @@
 :root{
-   --bgc-01:rgb(95, 19, 19);
-   --bgc-02:rgb(255, 55, 0);
+   --bgc-01:rgb(183, 57, 32);
+   --bgc-02:rgb(121, 43, 14);
    --bgc-03:rgb(95, 19, 19);
 }
 
@@ -56,9 +56,19 @@ header input#burger {
     display: none;
 }
 
+header label[for="burger"] {
+    z-index: 3;
+    top: 0;
+    right: 0;
+    display: none;
+    padding: 1rem 1ch;
+    text-align: right;
+    cursor: pointer;
+}
+
 header label[for="burger"] i {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 2rem;
 }
 
 .grid-container{
@@ -180,5 +190,25 @@ footer{
             grid-template-columns: 1fr;
         }
 
-        
+        header label[for="burger"] {
+            display: block;
+        }
+    
+        header nav ul {
+
+            z-index: 3;
+            top: 3rem;
+            right: 0;
+            display: none;
+            padding-right: 1ch;
+            width: 100%;
+            background-color: var(--bgc-02);
+            text-align: right;
+            user-select: none;
+        }
+    
+        header input#burger:checked+label[for="burger"]+nav ul {
+            display: flex;
+            flex-direction: column;
+        }
     }
