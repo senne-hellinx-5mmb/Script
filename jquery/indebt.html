@@ -2,48 +2,40 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
   <style>
-    .container {
-      display: flex;
-      justify-content: space-between;
+    body{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
-    .column {
-      flex: 1;
-      margin: 10px;
-    }
-
-    .column img {
-      width: 100%;
-      height: auto;
-    }
   </style>
 </head>
 <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left: '250px'});
+  });
+});
+</script> 
+<button>Start Animation</button>
+<a class="test-popup-link" href="img/Top-12-jQuery-Plugins-For-Enhancing-a-Website.png">Open popup</a>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
     <div data-aos="fade-up"
      data-aos-anchor-placement="center-center">
-
-  <div class="container">
-    <div class="column">
-        <a href="https://source.unsplash.com/random/300x200/?bass" data-lightbox="image-1" data-title="My caption">
-          <img src="https://source.unsplash.com/random/300x200/?bass" alt="Image 1">  
-        </a>  
-    </div>
-    <div class="column">
-        <a href="https://source.unsplash.com/random/300x200/?guitar" data-lightbox="image-1" data-title="My caption">
-          <img src="https://source.unsplash.com/random/300x200/?guitar" alt="Image 1">  
-        </a>  
-    </div>
-    <div class="column">
-        <a href="https://source.unsplash.com/random/300x200/?drum" data-lightbox="image-1" data-title="My caption">
-          <img src="https://source.unsplash.com/random/300x200/?drum" alt="Image 1">  
-        </a>  
-    </div> </div>
-    <script>
-        AOS.init();
-      </script>  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
   </div>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </body>
