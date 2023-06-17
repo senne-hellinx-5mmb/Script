@@ -4,7 +4,13 @@
    --bgc-03:rgb(95, 19, 19);
 }
 
-
+@keyframes draaien {
+    
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+    50% {transform: rotate(5deg);}
+    
+}
 
 *{
     margin: 0%;
@@ -82,6 +88,7 @@ header label[for="burger"] i {
     justify-content: center;
     min-width: 50px;
     position: relative
+    
 }
 
 .grid-card img{
@@ -92,12 +99,14 @@ header label[for="burger"] i {
     transition: all .1s step-end;
     -moz-transition: all .1s step-end;
     -o-transition: all .1s step-end;
+        
     
 }
 
 .grid-card img:hover{
     filter:saturate(70%) brightness(120%);
     transform: scale(1.1);
+    animation: draaien 1s linear infinite;
 }
 
 
@@ -187,6 +196,10 @@ footer{
 @media (width <=750px) {
     
        #lineup .grid-container{
+            grid-template-columns: 1fr;
+        }
+
+        .flex-container{
             grid-template-columns: 1fr;
         }
 
