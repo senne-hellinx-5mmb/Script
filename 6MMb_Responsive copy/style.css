@@ -1,0 +1,200 @@
+/*
+Font-sizes in em/rem
+Element width in % of vw
+left, right margin en padding %
+flexbox
+*/
+
+/* ---- FONTS ---- */
+/* 
+font-family:;'Epilogue', sans-serif;
+font-family:;
+font-family:;
+*/
+
+/* ---- COLORS ---- */
+/* 
+color:; #660E10; text color
+color:; #FFF; background-color
+color:; #E14649; accent color
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+img{
+    max-width: 100%;
+    height: auto;   
+}
+
+
+
+.logo a {
+    color: rgb(255, 202, 202);
+    text-decoration: none;
+    
+}
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    text-align: right;
+}
+
+nav li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #660E10;
+    font-weight: bold;
+    font-size: 14px;
+
+    
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(173, 173, 186);
+}
+
+.nav-links {
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #E14649;
+    border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFF;
+    
+}
+
+.login{
+    display: inline;
+    margin-right: 160px;
+    background-color: #ffffff; 
+    border: 3px solid #660E10; 
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px; 
+    
+}
+
+.hamburger {
+    display: flex; /* Displayed by default for mobile */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+
+.name{
+    font-size: 3.125rem;
+    color: #660E10;
+    padding-bottom: 10px;
+    margin-left: 20px; 
+    
+}
+
+.sub{
+    font-size: 1rem;
+    color: #660E10; 
+    padding-bottom: 20px;
+    margin-left: 20px;     
+}
+
+
+.work{
+    color: #FFF;
+    background-color: #E14649;
+    font-weight: 100;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+@media (min-width: 769px) { /* Styles for larger screens */
+    .nav-links {
+        display: flex; /* Displayed horizontally for larger screens */
+        flex-direction: row;
+        gap: 20px;
+        position: static; /* Resetting to default */
+        background-color: transparent; /* Resetting to default */
+        padding-right: 10%;
+    }
+
+    .hamburger {
+        display: none; /* Hiding hamburger for larger screens */
+    }
+    
+    .hero{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero_img{
+        padding-left: 0px;
+    }
+    
+    .hero_text{
+        padding-right: 40px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .nav-links {
+        display: flex; /* Displayed horizontally for larger screens */
+        flex-direction: row;
+        gap: 20px;
+        position: static; /* Resetting to default */
+        background-color: transparent; /* Resetting to default */
+        padding-right: 0%;
+    }
+
+    .hamburger {
+        display: none; /* Hiding hamburger for larger screens */
+    }
+    
+    .logo{
+        margin-right: 40%;
+        
+    }
+
+    .hero_img{
+        width: 100rem;
+        margin-right: 10%;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="figma.com">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>portfolio</title>
+</head>
+<div class="container">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="img/Kreed_Logo.png" alt="personal logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="login">Login</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero_img">
+            <img src="img/Kreed_img.svg" alt="">
+        </div>
+        <div class="hero_txt">
+            <h2 class="name">Delicious cakes and desserts by Kreed Bakery</h2>
+            <p class="sub">We deserve delicious cake and deliver <br>unique experience to you <br></p>
+            <button class="work">ORDER NOW</button>
+        </div>
+
+        
+    </section>
+</div>
+<script type="text/javascript">
+  function toggleMenu() {
+     const navLinks = document.querySelector('.nav-links');
+     navLinks.classList.toggle('active');
+  }
+</script>
+<body>

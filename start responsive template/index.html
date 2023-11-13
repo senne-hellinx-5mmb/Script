@@ -3,52 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>portfolio</title>
+    <title>Document</title>
 </head>
 <body>
-
-    <div class="container">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#"><img src="img/logo.svg" alt="personal logo"></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
-            </ul>
-            <div class="hamburger" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-        <section class="hero">
-            <div class="hero_img">
-                <img src="img/gabriel_Pines.png" alt="">
-            </div>
-            <div class="hero_txt">
-                <h3 class="name">Gabriel Pires</h3>
-                <h2 class="slogan">The Simple, 
-                    Clean Design</h2>
-                <p class="sub">Agency provides a full service range including technical skills, design, business understanding.</p>
-                <button class="work">See My Work</button>
-            </div>
-
-            
-        </section>
-    </div>
-    <script type="text/javascript">
-      function toggleMenu() {
-         const navLinks = document.querySelector('.nav-links');
-         navLinks.classList.toggle('active');
-      }
-    </script>
-
+    <img
+    sizes="(max-width: 1200px) 100vw, 1200px"
+    srcset="
+    img/new_york_sunset_sm.jpg 320w,
+    img/new_york_sunset_md.jpg 724w,
+    img/new_york_sunset_lg.jpg 1025w,
+    img/new_york_sunset_xl.jpg 1200w"
+    src="img/new_york_sunset_sm.jpg"
+    alt="">
+    
 </body>
 </html>
