@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Asap", sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    background-color: black;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col{
+    background-color: beige;
+    min-height: 200px;
+    margin-bottom: 40px;
+    width: 30%;
+}
+
+.hide-desktop{
+    display: none;
+}
+
+.col p::first-line{
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    .col{
+        width: 45%;
+    }
+    .hide-desktop{
+        display: block;
+    }
+}
+
+@media (max-width: 400px){
+    .col{
+        width: 100%;
+    }
+}
