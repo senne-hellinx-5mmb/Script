@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/Senne_Hellinx_Festival/index.html"
+    "livePreview.defaultPreviewPath": "/Senne_Hellinx_Festival/index.html",
+    "C_Cpp.errorSquiggles": "enabled"
 }
