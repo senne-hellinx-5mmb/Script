@@ -1,0 +1,446 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.icon{
+  display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0f7a3f;
+  }
+  
+  .logo-1 {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .logo-1 img {
+    max-width: 100%;
+    width: 20%;
+  }
+  
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .nav-links a {
+    list-style: none;
+    color: #15ca66;
+    text-decoration: none;
+    font-family: "prometo", sans-serif;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-right: 9%;
+    padding: 1%;
+  }
+  
+  .nav-links li:hover {
+    background-color: #035b09;
+    
+  }
+
+  .login-button a {
+    background-color: #EE7411;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "prometo", sans-serif;
+  }
+  
+  .login-button a:hover {
+    background-color: #EE7411;
+  }
+
+  header img{
+    display: flex;
+    max-width: 100%;
+  }
+
+  .about img{
+    max-width: 100%;
+    margin-left: 15%;
+    width: 80%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.about p{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 50%;
+    padding-top: 1%;
+
+}
+
+.about h1{
+    display: flex;
+    color: #6c1c16;
+    font-size: 34px;
+    padding-top: 9%;
+    font-family: "prometo", sans-serif;
+}
+
+.about-button a {
+  background-color: #EE7411;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about-button a:hover {
+  background-color: #EE7411;
+}
+  
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+
+.grid-card{
+  display: flex;
+  justify-content: center;
+  min-width: 50px;
+  position: relative;
+}
+
+.grid-card img{
+  object-fit: cover;
+  width: 100%;
+  transform: scale(1);
+  -webkit-transition: all .1s step-end;
+  transition: all .1s step-end;
+  -moz-transition: all .1s step-end;
+  -o-transition: all .1s step-end;
+      
+  
+}
+
+.grid-card img:hover{
+  filter:saturate(70%) brightness(120%);
+  transform: scale(1.1);
+}
+
+
+.band-name{
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  position: absolute;
+  bottom: 15%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "prometo", sans-serif;
+}
+
+.tijdstip-tekst{
+  transform: scale(1.1);
+}
+
+.works-2{
+  background-color: #074d26;
+  padding-bottom: 5%;
+  background-image: url("img/Gustave_Courbet_-_The_Stonebreakers_-_WGA05457.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.works-2 p{
+  display: flex;
+  margin-top: 45%;
+  margin-left: 15%;
+  text-align: center;
+  background-color: #6c1c16;
+  color: #EE7411;
+  margin-right: 50%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.works-2 h1{
+  display: flex;
+  background-color: #EE7411;
+  color: #6c1c16;
+  font-size: 40px;
+  margin-top: 12%;
+  text-align: right;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  font-family: "prometo", sans-serif;
+}
+
+.works-2-button a {
+background-color: #EE7411;
+color: #fff;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+margin-left: 80px;
+
+}
+
+.works-2-button a:hover {
+background-color: #EE7411;
+}
+
+.container-card {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15%;
+  padding-bottom: 5%;
+}
+
+.card img{
+  max-width: 100%;
+  width: 85%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-left: 25px;
+}
+
+.card {
+  padding: 20px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.card p{
+  color:#15d76c ;
+  background-color:#074d26 ;
+}
+
+.card h3{
+  color: #0d8141;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-button a {
+  background-color: #e9680b;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 80px;
+  margin-bottom: 10%;
+}
+
+.works-2-button a:hover {
+  background-color: #EE7411;
+  }
+
+.footer {
+  color: #EE7411;
+  background-color: #8a1b08;
+  padding: 50px 0;
+  margin-top: 10%;
+}
+
+.container-footer {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  color: #EE7411;
+}
+
+.footer-section p {
+  color: #EE7411;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links li a {
+  color: #EE7411;
+  text-decoration: none;
+}
+
+.bottom-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .grid-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-links{
+    display: none;
+  }
+
+  .login-button{
+    display: none;
+  }
+}
+  
+
+@media (max-width: 700px) {
+  .works-2{
+    background-color: #074d26;
+    padding-bottom: 5%;
+    background-image: url("img/Gustave_Courbet_-_The_Stonebreakers_-_WGA05457.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .works-2 p{
+    font-size: x-small;
+    display: flex;
+    margin-top: 45%;
+    margin-left: 28%;
+    text-align: center;
+    background-color: #6c1c16;
+    color: #EE7411;
+    margin-right: 32%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  
+  .works-2 h1{
+    display: flex;
+    background-color: #EE7411;
+    color: #6c1c16;
+    font-size: 24px;
+    margin-top: 12%;
+    text-align: right;
+    padding-right: 4%;
+    padding-bottom: 2%;
+  }
+  
+  .works-2-button a {
+  background-color: #EE7411; /* Set your desired button background color */
+  color: #fff; /* Set your desired button text color */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 80px;
+  font-size: x-small;  
+  }
+  
+  .works-2-button a:hover {
+  background-color: #ce7527; /* Set your desired button hover background color */
+  }
+
+  .grid-card{
+    margin-top: 0%;
+  }
+  
+  .logo{
+    display:none;
+  }
+
+  .about p{
+    font-size: x-small;
+
+}
+
+.about h1{
+    font-size: medium;
+}
+
+.about-button a {
+   font-size: x-small;
+}
+
+.grid-container{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.nav-links{
+  display: none;
+}
+
+.login-button{
+  display: none;
+}
+
+
+
+}
