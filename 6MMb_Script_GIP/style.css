@@ -80,7 +80,7 @@
     justify-content: flex-start;
     margin-right: 50%;
     padding-top: 1%;
-
+    font-family: "forma-djr-micro", sans-serif;
 }
 
 .about h1{
@@ -149,10 +149,6 @@
   font-family: "prometo", sans-serif;
 }
 
-.tijdstip-tekst{
-  transform: scale(1.1);
-}
-
 .works-2{
   background-color: #074d26;
   padding-bottom: 5%;
@@ -172,6 +168,7 @@
   margin-right: 50%;
   padding-top: 2%;
   padding-bottom: 2%;
+  font-family: "forma-djr-micro", sans-serif;
 }
 
 .works-2 h1{
@@ -205,6 +202,7 @@ background-color: #EE7411;
   justify-content: space-between;
   padding-top: 15%;
   padding-bottom: 5%;
+  background-color: #074d26;
 }
 
 .card img{
@@ -216,18 +214,20 @@ background-color: #EE7411;
 }
 
 .card {
+  background-color: #074d26;
   padding: 20px;
   margin-right: 10px;
   text-align: center;
 }
 
 .card p{
-  color:#15d76c ;
-  background-color:#074d26 ;
+  color:#074d26 ;
+  font-family: "forma-djr-micro", sans-serif;
 }
 
 .card h3{
   color: #0d8141;
+  font-family: "prometo", sans-serif;
 }
 
 .card:last-child {
@@ -251,6 +251,7 @@ body {
 }
 
 .form {
+  padding-top: 2%;
   display: flex;
   flex-direction: column;
 }
@@ -258,6 +259,7 @@ body {
 .form h2 {
   margin-bottom: 20px;
   text-align: center;
+  font-family: "prometo";
 }
 
 .form-group {
@@ -286,6 +288,7 @@ body {
   border-radius: 5px;
   margin-left: 80px;
   margin-bottom: 10%;
+  font-family: "forma-djr-micro", sans-serif;
 }
 
 .works-2-button a:hover {
@@ -319,10 +322,12 @@ body {
 
 .footer-section h3 {
   color: #EE7411;
+  font-family: "prometo";
 }
 
 .footer-section p {
   color: #EE7411;
+  font-family: "forma-djr-micro", sans-serif;
 }
 
 .social-links {
@@ -338,6 +343,7 @@ body {
 .social-links li a {
   color: #EE7411;
   text-decoration: none;
+  font-family: "forma-djr-micro", sans-serif;
 }
 
 .bottom-footer {
@@ -356,6 +362,15 @@ body {
 
   .login-button{
     display: none;
+  }
+
+  .icon{
+    display: contents;
+    color: #15d76c;
+  }
+
+  .card{
+    display: table-column;
   }
 }
   
@@ -395,8 +410,8 @@ body {
   }
   
   .works-2-button a {
-  background-color: #EE7411; /* Set your desired button background color */
-  color: #fff; /* Set your desired button text color */
+  background-color: #EE7411;
+  color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -405,7 +420,7 @@ body {
   }
   
   .works-2-button a:hover {
-  background-color: #ce7527; /* Set your desired button hover background color */
+  background-color: #ce7527;
   }
 
   .grid-card{
