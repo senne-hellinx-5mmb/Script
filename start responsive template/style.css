@@ -30,14 +30,42 @@ img{
     height: auto;
 }
 
-body{
-    background: url(img/new_york_sunset_sm.jpg) no-repeat center center;
-    background-size: cover;
-    height: 100%;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-@media (max-width: 325px) {
-    body{
-        background: url(img/new_york_sunset_sm.jpg) no-repeat center center;  
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 32px);
+    max-width: calc(33.333% - 32px);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 32px);
+        max-width: calc(50% - 32px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 }

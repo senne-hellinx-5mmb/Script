@@ -67,20 +67,17 @@
     max-width: 100%;
   }
 
-  .about img{
-    max-width: 100%;
-    margin-left: 15%;
-    width: 80%;
-    padding-top: 15%;
-    padding-bottom: 15%;
+  .about iframe{
+    margin-left: 10%;
 }
 
 .about p{
     display: flex;
     justify-content: flex-start;
-    margin-right: 50%;
+    margin-right: 30%;
     padding-top: 1%;
     font-family: "forma-djr-micro", sans-serif;
+    margin-left: 10%;
 }
 
 .about h1{
@@ -89,6 +86,7 @@
     font-size: 34px;
     padding-top: 9%;
     font-family: "prometo", sans-serif;
+    margin-left: 10%;
 }
 
 .about-button a {
@@ -97,6 +95,7 @@
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
+  margin-left: 10%;
 }
 
 .about-button a:hover {
@@ -202,7 +201,7 @@ background-color: #EE7411;
   justify-content: space-between;
   padding-top: 15%;
   padding-bottom: 5%;
-  background-color: #074d26;
+  background-color: #ffffff;
 }
 
 .card img{
@@ -214,7 +213,7 @@ background-color: #EE7411;
 }
 
 .card {
-  background-color: #074d26;
+  background-color: #24c464;
   padding: 20px;
   margin-right: 10px;
   text-align: center;
@@ -248,6 +247,41 @@ body {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 32px);
+  max-width: calc(33.333% - 32px);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+      flex: 1 1 calc(50% - 32px);
+      max-width: calc(50% - 32px);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
 }
 
 .form {
@@ -458,4 +492,61 @@ body {
 
 
 
+}
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
 }
